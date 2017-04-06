@@ -15,13 +15,10 @@ class db
 			$con = pg_connect($con_string);
 
 			
-			//ajustar o char set entre aplicação e banco
-			//pg_query($con, "SET CLIENT_ENCODING TO <tt>'UTF-8</tt>'");
-
 			//verifica se houve erro de conexão
 			if(pg_last_error()){
 
-				echo "Erro de conexão com o DB!!!"; //. pg_error($con);
+				echo "Erro de conexão com o DB!!!";
 
 			}
 		
