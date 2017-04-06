@@ -1,0 +1,33 @@
+	<!DOCTYPE html>
+<html>
+		<head>
+			<title> Cadastro de Usuário </title>
+
+			<meta charset=utf-8
+
+			<!-- jquery - link cdn -->
+			<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+			<!-- bootstrap - link cdn -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		
+
+		</head>
+	
+
+
+
+
+	<body>
+		  <div class="container">
+			<form class= "login" method="POST" action="cadastrar.php">
+
+		    	<label>E-mail:</label><input class="form-control" type="email" name="email" id="email"><br>
+				<label>Login:</label><input class="form-control" type="text" name="usuario" id="usuario"><br>
+				<label>Senha:</label><input class="form-control red" type="password" name="senha" id="senha"><br>
+			
+				<input class="btn btn-primary" type="submit" value="Entrar" id="entrar" name="entrar">
+			</form>
+		</div>	
+	</body>
+</html>

@@ -1,0 +1,179 @@
+
+* {
+	margin:0;
+	padding: 0;
+}
+body{
+	font-size: 15px;
+	font-family: helvetica, sans-serif;
+	background:f3f3f3;
+}
+/******************* Formatação de Menus/Links ******************/
+a{
+	text-decoration: none;
+	padding: 5px;
+	color:  black;
+}
+a:link{
+	color: 838383;
+}
+
+a:visited{
+	color:838383;
+}
+a:hover{
+	color:#fff;
+	background:#87CEFA;
+}
+
+#cabecalho1{
+				
+				background-color: #a9c4eb; 
+				font-family: amgdt; 
+				text-align: center;
+				font-size: 50px;
+				position: relative;
+				top: 25px ;
+				height: 70px;
+				width: 100%;
+				
+			}
+
+
+#barra{
+				
+				background: #a9c4eb; 
+				top: 25px ;
+				position: relative;
+				height: 70px;
+				width: 100%;
+				border-bottom: 1px solid #d8d8d8; 
+
+				
+				
+			}
+#menu {
+				
+				margin: 0 auto;
+				width:720px;
+				height: 36px;
+				padding: 17px;
+				
+
+}
+
+
+#centro {
+				text-align: center;
+				padding: 8px;
+}
+.menu1{
+				float: left;
+				padding: 5px;
+}
+
+.menu2{
+				float: right;
+				padding: 5px;
+}
+
+#icone{
+				text-align: center;
+				position: relative; 
+				top: 100px;
+			}
+
+.login {
+				
+				text-align: center;
+				font-family: helvetica, sans-serif;
+				position: relative; 
+				top: 70px;
+
+			}
+
+#rodape1{
+
+				position:relative;
+				bottom:-150px;
+				width:100%;
+				text-align: center;
+			}
+
+#rodape{
+
+				/*text-align: center;
+				position: relative; 
+				top: 100px;"*/
+				position:relative;
+				bottom:-50px;
+				width:100%;
+				text-align: center;
+			}
+
+
+#borda_caixa_envio {
+				margin: 50px auto;
+				border: 1px solid #a1a1a1;
+				border-width: 0px 5px 0px 5px; 
+				
+				font-family: helvetica, sans-serif; 
+				font-size: 18px; 
+				position: relative; 
+				width:720px; 
+				height:410px;
+				padding: 10px;
+
+			}
+
+#borda_caixa_envio2 {
+
+				width:520px; 
+				margin: 0 auto;
+				padding: 10px; 
+				
+			}
+
+.anexos {
+				margin-left: auto;
+			}
+
+#agenda {
+				border: 1px solid #a1a1a1;
+				border-width: 0px 0px 0px 5px; 
+				font-family: helvetica,sans-serif; 
+				font-size: 18px; 
+				position: relative; 
+				margin: 50px auto;
+				width:720px; 
+				height:410px;
+				padding: 0 0 0 30px;
+				overflow: auto;
+}
+
+#botao{
+	margin-left: 70%;
+}
+
+#caixadeenviadas {
+				border: 1px solid #a1a1a1;
+				border-width: 0px 0px 0px 5px; 
+				font-family: helvetica,sans-serif; 
+				font-size: 18px; 
+				position: relative; 
+				margin: 50px auto;
+				width:720px; 
+				height:410px;
+				padding: 0 0 0 30px;
+				overflow: auto;
+}
+
+.display {
+				font-family: helvetica,sans-serif; 
+				border-bottom: 2px solid #f4f4f4;
+				display: block;
+				margin-bottom: 4px;
+				padding-bottom: 4px;
+
+				
+}
