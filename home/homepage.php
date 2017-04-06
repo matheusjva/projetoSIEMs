@@ -59,19 +59,17 @@
 
  	<div id="borda_caixa_envio">
  			<div id ="borda_caixa_envio2">
- 				<form>
+ 				<form method="POST" action="tratamento_contatos.php" >
  					Enviar por:
  					<br>
- 					<input type="radio" name="sms">SMS
- 					<input type="radio" name="whatsapp">WhatsApp
- 					<input type="radio" name="telegram">Telegram
- 					<input type="radio" name="email">E-mail
+ 					<input type="checkbox" name="sms">Sms
+ 					<input type="checkbox" name="email">E-mail
  					<br>
  					<br>
  			
  					Para:
  					<br>
- 					<textarea rows="4" cols="55" name="destinatarios" placeholder="Ex: fulano@cicrano.com ou 84999123456 separados por ','(virgula) "></textarea>
+ 					<textarea id="contatos" rows="4" cols="55" name="destinatarios" placeholder="Ex: fulano@cicrano.com ou 84999123456 separados por ','(virgula) "></textarea>
  					<br>
  					
  					<input type="file" name="arquivo_csv">
