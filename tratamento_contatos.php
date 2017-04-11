@@ -1,12 +1,18 @@
 <?php
 
-$contatos = $_POST['contatos'];
+$contato = $_POST['contatos'];
 
-$separar_contatos = explode(',', $contatos);
+$separar_contatos = explode(',', $contato);
 
-for (i=0; i <= strlen($contatos); i++){
+$cont = strlen($contato);
 
-	echo ""
+echo $cont . "<br>";
+
+for ($i = 0 ; $i < $cont ; $i++){
+
+	echo $separar_contatos[$i] . "<br />";
+
+   
 }
 
 

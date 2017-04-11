@@ -8,7 +8,7 @@
 	}
 
 ?>
-
+	
 <!DOCTYPE html>
 <html>
 	<head>
@@ -17,6 +17,24 @@
 		<title>Home</title>
 		<meta charset="utf-8">
 
+		<!-- jquery - link cdn -->
+            <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+            <!-- bootstrap - link cdn -->
+            
+           <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+
+		<script>
+			function diminuircaixa() {
+				$("#box_normal").attr("maxlength", 140)
+				alert('Sua mensagem poderá conter apenas 140 caracteres, para mensagens longas, recarregue a página e envie apenas por E-mail.')
+			} 
+		</script>
+
+	
 	</head>
 
 <body>
@@ -59,17 +77,18 @@
 
  	<div id="borda_caixa_envio">
  			<div id ="borda_caixa_envio2">
- 				<form method="POST" action="tratamento_contatos.php" >
+ 				<form method="POST" action="/projetoSIEMs/tratamento_contatos.php" >
  					Enviar por:
  					<br>
- 					<input type="checkbox" name="sms">Sms
+ 					<input type="checkbox" id="sms" name="sms"  onclick="diminuircaixa()">Sms
+ 	
  					<input type="checkbox" name="email">E-mail
  					<br>
  					<br>
  			
  					Para:
  					<br>
- 					<textarea id="contatos" rows="4" cols="55" name="destinatarios" placeholder="Ex: fulano@cicrano.com ou 84999123456 separados por ','(virgula) "></textarea>
+ 					<textarea  rows="4" cols="55" name="contatos" id="contatos" placeholder="Ex: fulano@cicrano.com ou 84999123456 separados por ','(virgula) "></textarea>
  					<br>
  					
  					<input type="file" name="arquivo_csv">
@@ -81,7 +100,9 @@
  					<input type="text" name="assunto" size="71">
  					<br/>
  					<br/>
- 					<textarea rows="6" cols="55" name="mensagem" placeholder="Digite sua mensagem..."></textarea><br>
+ 					
+ 					<textarea id="box_normal" rows="6" cols="55" maxlength="" name="mensagem"  placeholder="Digite sua mensagem..."></textarea><br>
+
  					<input type="file" name="anexos">
  					</input>
 
