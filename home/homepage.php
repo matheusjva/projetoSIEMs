@@ -77,7 +77,7 @@
 
  	<div id="borda_caixa_envio">
  			<div id ="borda_caixa_envio2">
- 				<form method="POST" action="/projetoSIEMs/tratamento_contatos.php" >
+ 				<form method="POST" action="/projetoSIEMs/enviando.php" >
  					Enviar por:
  					<br>
  					<input type="checkbox" id="sms" name="sms"  onclick="diminuircaixa()">Sms
