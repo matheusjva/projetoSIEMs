@@ -24,7 +24,7 @@ if ($resultado_id) {
 
 
     if (isset($dados_usuario['usuario'])){
-        header('Location: /projetoSIEMs/home/homepage.php');
+        header('Location: /projetoSIEMs/home/homepage.html');
 
         $_SESSION['usuario'] = $dados_usuario['usuario'];
         $_SESSION['email'] = $dados_usuario['email'];

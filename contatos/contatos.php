@@ -48,49 +48,37 @@
 
  		<div id = "agenda">
  			<h3><span class="display">Contatos</span></h3>
- 			<ul>
  			
-		 			<li> Fulano 1</li>
-		 			<li> Fulano 2</li>
-		 			<li> Fulano 3</li>
-		 			<li> Fulano 4</li>
-		 			<li> Fulano 5</li>
-		 			<li> Fulano 6</li>
-		 			<li> Fulano 7</li>
-		 			<li> Fulano 8</li>
-		 			<li> Fulano 9</li>
-		 			<li> Fulano 10</li>
-		 			<li> Fulano 11</li>
-		 			<li> Fulano 12</li>
-		 			<li> Fulano 13</li>
-		 			<li> Fulano 14</li>
-		 			<li> Fulano 15</li>
-		 			<li> Fulano 16</li>
-		 			<li> Fulano 1</li>
-		 			<li> Fulano 2</li>
-		 			<li> Fulano 3</li>
-		 			<li> Fulano 4</li>
-		 			<li> Fulano 5</li>
-		 			<li> Fulano 6</li>
-		 			<li> Fulano 7</li>
-		 			<li> Fulano 8</li>
-		 			<li> Fulano 9</li>
-		 			<li> Fulano 10</li>
-		 			<li> Fulano 11</li>
-		 			<li> Fulano 12</li>
-		 			<li> Fulano 13</li>
-		 			<li> Fulano 14</li>
-		 			<li> Fulano 15</li>
-		 			<li> Fulano 16</li>
-			</ul>
+
+ 			<!--<?php  
+ 				//require_once ('db.class.php');
+    			$objdb = new db();
+    			$link = $objdb->conecta_pg();
+
+    			$sqlnome = "SELECT nome FROM agenda";
+    			$sqlemail = "SELECT email FROM agenda";
+    			$sqltelefone = "SELECT telefone FROM agenda";
+
+    			echo "<tr> 
+    						<td>pg_query($link, $sqlnome))</td> 
+    						<td>pg_query($link, $sqlemail))</td> 
+    						<td>pg_query($link, $sqltelefone))</td> 
+
+    				 </tr>"
+
+ 			?>
+-->
+
+
+
  		</div>
  			<div id="rodape">
     		
-    			<img src="/projetoSIEMs/Imagens/sedis.png" width="50" height="60" /> 	
+    		<img src="/projetoSIEMs/Imagens/sedis.png" width="50" height="60" /> 	
 
     	
-    			<img src="/projetoSIEMs/Imagens/ufrn.png" height="60" width="100" /><br /><br />
-            	<footer>Copyright &copy; 2017 SEDIS; Todos os direitos reservados. </footer>
+    		<img src="/projetoSIEMs/Imagens/ufrn.png" height="60" width="100" /><br /><br />
+            <footer>Copyright &copy; 2017 SEDIS; Todos os direitos reservados. </footer>
 
     	</div>
 	</div>
